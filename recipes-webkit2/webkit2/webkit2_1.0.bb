@@ -6,17 +6,16 @@ PR = "r1"
 
 DEPENDS = "\
            automake \
-           autotools-dev \
            bison \
            flex \
-           gail-3.0 \
+           gtk+3 \
            gawk \
            gnome-common \
-           autopoint \
+           gettext \
            gperf \
            ruby \
-           gtk-doc-tools \
-           libenchant-dev \
+           gtk-doc \
+           enchant-dev \
            libgail-dev \
            libgail-3-dev \
            libgeoclue-dev \
@@ -39,9 +38,11 @@ DEPENDS = "\
            libsecret-1-dev \
 "
 
+inherit autotools
+
 SRC_URI = "git://git.webkit.org/WebKit.git;protocol=git;branch=master"
 #SRC_URI = "git://git.webkit.org/WebKit.git"
-SRCREV = "3ff8da427d2db2c1646e64b5699b27cf2b2e5988"
+SRCREV = "33f90bcbc485f60792dbbc54f63fc59ab6ac72c8"
 
 SRC_URI[md5sum] = ""
 SRC_URI[sha256sum] = ""
