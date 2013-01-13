@@ -15,27 +15,18 @@ DEPENDS = "\
            gperf \
            ruby \
            gtk-doc \
-           enchant-dev \
-           libgail-dev \
-           libgail-3-dev \
-           libgeoclue-dev \
-           libgirepository1.0-dev \
-           libgtk-3-dev \
-           libgstreamer-plugins-base0.10-dev \
-           libgudev-1.0-dev \
-           libicu-dev \
-           libgl1-mesa-glx \
-           libgl1-mesa-dev \
-           libjpeg62-dev \
-           libpango1.0-dev \
-           libpng12-dev \
-           libsqlite3-dev \
+           enchant \
+           gstreamer \
+           icu \
+           jpeg \
+           pango \
+           libpng \
+           sqlite3 \
            libtool \
-           libxslt1-dev \
-           libxt-dev \
-           libxtst-dev \
-           libgnutls-dev \
-           libsecret-1-dev \
+           libxslt \
+           libxt \
+           libxtst \
+           gnutls \
 "
 
 inherit autotools
@@ -48,16 +39,3 @@ SRC_URI[md5sum] = ""
 SRC_URI[sha256sum] = ""
 
 S = "${WORKDIR}/git"
-
-do_configure() {
-        
-}
-
-do_compile() {
-        
-}
-
-do_install() {
-        
-}
-
